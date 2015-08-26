@@ -15,11 +15,11 @@ Windows Vista and newer automatically attach an Alternate Data Stream, or ADS, t
 3. URLZONE_INTERNET
 4. URLZONE_UNTRUSTED
 
-I wrote this script on the following premise: most malware comes from the Internet rasther than being compiled locally or copied from another device on the local network. On the other hand, most Windows system files and legitimate programs (even if they come via an Internet update) are not tagged with the URLZONE_INTERNET zone identifier. Thus, recursively scanning a local hard drive for anything that originated on the Internet might reveal potentially suspicious files. 
+I wrote this script on the following premise: most malware comes from the Internet rather than being compiled locally or copied from another device on the local network. On the other hand, most Windows system files and legitimate programs (even if they come via an Internet update) are not tagged with the URLZONE_INTERNET zone identifier. Thus, recursively scanning a local hard drive for anything that originated on the Internet might reveal potentially suspicious files. 
 
 In particular, anything in *c:\windows,* *c:\program files(x86)*, or *c:\program files* that comes from the Internet might be suspicious.
 
-By default the script excludesd everything under c:\users - browser history, downloaded documents, and other such user-specific content will in many cases be overwhelming. The --fullscan parameter disables this exclusion and will look for ANYTHING downloaded from the Internet.
+By default the script excludes everything under c:\users - browser history, downloaded documents, and other such user-specific content will in many cases be overwhelming. The --fullscan parameter disables this exclusion and will look for ANYTHING downloaded from the Internet.
 
 Hat tip to David Robin, whose pyADS library (https://github.com/RobinDavid/pyADS) is used by this script.
 
