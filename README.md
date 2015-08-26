@@ -21,6 +21,8 @@ In particular, anything in *c:\windows,* *c:\program files(x86)*, or *c:\program
 
 By default the script excludes everything under c:\users - browser history, downloaded documents, and other such user-specific content will in many cases be overwhelming. The --fullscan parameter disables this exclusion and will look for ANYTHING downloaded from the Internet.
 
+Caveat: in my testing it appears downloaded archives (.zip, etc.) are themselves tagged with a zone identifier, but the extracted contents are not.
+
 Hat tip to David Robin, whose pyADS library (https://github.com/RobinDavid/pyADS) is used by this script.
 
 Requirements:
