@@ -6,7 +6,6 @@ Recurse through a Windows directory, looking for any files originally downloaded
 * Written by David Longenecker
 * Twitter: @dnlongen
 * Email: david (at) securityforrealpeople.com
-* More info: http://www.securityforrealpeople.com/FindInternetFiles
 
 Windows Vista and newer automatically attach an Alternate Data Stream, or ADS, to all Internet downloads. This ADS is titled "Zone.Identifier" and contains a single value: ZoneID=3. Files from other origins may have a Zone Identifier as well; Microsoft defines the following zones:
 
