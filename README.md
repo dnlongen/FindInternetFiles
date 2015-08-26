@@ -9,11 +9,11 @@ Recurse through a Windows directory, looking for any files originally downloaded
 
 Windows Vista and newer automatically attach an Alternate Data Stream, or ADS, to all Internet downloads. This ADS is titled "Zone.Identifier" and contains a single value: ZoneID=3. Files from other origins may have a Zone Identifier as well; Microsoft defines the following zones:
 
-0. URLZONE_LOCAL_MACHINE
-1. URLZONE_INTRANET
-2. URLZONE_TRUSTED
-3. URLZONE_INTERNET
-4. URLZONE_UNTRUSTED
+* 0 = URLZONE_LOCAL_MACHINE
+* 1 = URLZONE_INTRANET
+* 2 = URLZONE_TRUSTED
+* 3 = URLZONE_INTERNET
+* 4 = URLZONE_UNTRUSTED
 
 I wrote this script on the following premise: most malware comes from the Internet rather than being compiled locally or copied from another device on the local network. On the other hand, most Windows system files and legitimate programs (even if they come via an Internet update) are not tagged with the URLZONE_INTERNET zone identifier. Thus, recursively scanning a local hard drive for anything that originated on the Internet might reveal potentially suspicious files. 
 
