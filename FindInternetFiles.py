@@ -4,7 +4,6 @@ Source: https://github.com/dnlongen/FindInternetDownloads
 Author: David Longenecker
 Author email: david@securityforrealpeople.com 
 Author Twitter: @dnlongen
-Explanation: http://securityforrealpeople.com/FindInternetDownloads
 Uses pyADS library written by David Robin, source https://github.com/RobinDavid/pyADS
 '''
 
