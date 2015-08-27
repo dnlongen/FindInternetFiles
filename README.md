@@ -54,6 +54,12 @@ optional arguments:
   -v, --verbose   Verbose output
 ```
 
+Findings:
+=============
+In some testing among a handful of systems I have, %systemroot% and %programfiles% have very few if any files with an ADS of ZoneID=3. However, Windows 7 and newer make it harder for an adversary to put files here. %AppData and %Temp% are available to an attacker without privileged escalation - and they also rarely have non-malicious Internet-downloaded files. Scanning those four locations could be useful.
+
+As long as you have a mapped file share, FindInternetFiles will just as happily scan a remote system (FindInternetFiles.py \\hostname\share) as scan a local filesystem. Useful for scripting scans across a range of systems.
+
 Change Log:
 =============
 
